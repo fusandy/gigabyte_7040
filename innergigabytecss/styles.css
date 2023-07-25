@@ -1,0 +1,798 @@
+h1 {
+  color: var(--white);
+}
+:root {
+  --main-red: #ED1C24;
+  --shadow-red: #ED1C24;
+  --dark-gray: #666666;
+  --light-gray: #8B8B8B;;
+  --black: #000000;
+  --white: #ffffff;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url(../font/Gotham-Medium.otf);
+}
+@font-face {
+  font-family: "Gotham_Bold";
+  src: url(../font/Gotham-Bold.otf);
+}
+@font-face {
+  font-family: "Gotham_Light";
+  src: url(../font/Gotham-Light.otf);
+}
+
+/* fullpage css overwrite */
+#fp-nav ul li .fp-tooltip {
+  max-width: 250px;
+  font-size: 10px;
+}
+
+.InnerGIGABYTEContent {
+  background-color: var(--black);
+}
+
+/* section 0 landing page */
+.InnerGIGABYTEContent .s01 {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: url('/innergigabyteimages/s01_bg.png') no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.InnerGIGABYTEContent .s01_title {
+  width: 500px;
+}
+
+.InnerGIGABYTEContent .s01_title img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.InnerGIGABYTEContent .s01_subTitle {
+  width: 550px;
+  padding: 40px;
+}
+
+.InnerGIGABYTEContent .s01_subTitle img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.InnerGIGABYTEContent .s01_product {
+  width: 250px;
+}
+
+.InnerGIGABYTEContent .s01_product img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.InnerGIGABYTEContent .s01_feature {
+  width: 180px;
+}
+
+.InnerGIGABYTEContent .s01_feature img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* section 1 video */
+.InnerGIGABYTEContent .s02 {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.InnerGIGABYTEContent .s02 video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* section 2 component animation */
+.InnerGIGABYTEContent .s03 {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.InnerGIGABYTEContent .s03 h1 {
+  font-family: "Gotham_Bold";
+  font-size: 60px;
+}
+
+.InnerGIGABYTEContent .s03 .animationImages {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.InnerGIGABYTEContent .s03 .animationImages .image-box.box-01 {
+  width: 120px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 25%;
+  /* opacity: 0; */
+}
+
+.InnerGIGABYTEContent .s03 .animationImages .image-box.box-02 {
+  width: 60px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 25%;
+  /* opacity: 0; */
+}
+
+.InnerGIGABYTEContent .s03 .animationImages .image-box.box-03 {
+  width: 180px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 25%;
+  /* opacity: 0; */
+}
+
+.InnerGIGABYTEContent .s03 .animationImages .image-box.box-04 {
+  width: 50px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 25%;
+  /* opacity: 0; */
+}
+
+.InnerGIGABYTEContent .s03 .animationImages .image-box.box-05 {
+  width: 50px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 25%;
+  /* opacity: 0; */
+}
+
+.InnerGIGABYTEContent .s03 .animationImages .image-box.box-06 {
+  width: 50px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 25%;
+  /* opacity: 0; */
+}
+
+.InnerGIGABYTEContent .s03 .animationImages .image-box.box-07 {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 28%;
+  /* opacity: 0; */
+}
+
+.InnerGIGABYTEContent .s03 .animationImages .image-box.box-product {
+  width: 250px;
+  height: 130px;
+}
+
+.InnerGIGABYTEContent .s03 .animationImages .image-box.box-bottom {
+  width: 250px;
+  height: 130px;
+  object-position: center;
+}
+
+.InnerGIGABYTEContent .s03 .animationImages .image-box img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.InnerGIGABYTEContent .fly-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.InnerGIGABYTEContent .invisible {
+  opacity: 0;
+  transition-duration: 1s;
+}
+
+.InnerGIGABYTEContent .hidden-item {
+  display: none;
+}
+
+.InnerGIGABYTEContent .display-item {
+  display: flex;
+  align-items: center;
+}
+
+.InnerGIGABYTEContent .collapse-btn {
+  width: 120px;
+  border: unset;
+  border-radius: 20px;
+  background-color: var(--main-red);
+  box-shadow: 1px 1px 2px 1px var(--shadow-red);
+  font-family: "Gotham_Bold";
+  font-size: 25px;
+  color: var(--white);
+}
+
+.InnerGIGABYTEContent .collapse-btn:hover,
+.InnerGIGABYTEContent .collapse-btn:focus {
+  background-color: var(--main-red);
+}
+
+.InnerGIGABYTEContent .collapse-btn:focus {
+  outline: none !important;
+}
+
+/* section 5 AMD Connectivity OutPut DDRS VESA */
+.InnerGIGABYTEContent .s05 {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 2rem;
+  border-top-left-radius: 55px;
+  border-top-right-radius: 55px;
+  background-image: linear-gradient(rgba(27, 29, 33, 1), rgba(0, 0, 0, 0));
+}
+
+.InnerGIGABYTEContent .s05 .s05_tab_area {
+  width: 70%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--white);
+  border-radius: 60px;
+  font-size: 20px;
+  font-family: "Gotham";
+  color: var(--white);
+  list-style: none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.InnerGIGABYTEContent .s05 .s05_tab_area .s05_tab {
+  text-align: center;
+  flex-grow: 1;
+  height: 100%;
+  cursor: pointer;
+  padding-top: 1rem;
+}
+
+.InnerGIGABYTEContent .s05 .s05_tab.active {
+  background-color: var(--main-red);
+  border-radius: 55px;
+  transition: background-color .5s ease-in;
+}
+
+.InnerGIGABYTEContent .s05 .s05_content_area {
+  content-visibility: hidden;;
+  opacity: 0;
+  transition: .5s ease-in;
+}
+
+.InnerGIGABYTEContent .s05 .s05_content_area.active {
+  content-visibility: visible;
+  opacity: 1;
+}
+
+.InnerGIGABYTEContent .s05 .s05_content_area h1 {
+  font-family: "Gotham_Bold";
+  font-size: 40px;
+  padding-top: 20px;
+  margin: 0;
+  text-align: center;
+}
+
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_description {
+  width: 70%;
+  font-family: "Gotham";
+  font-size: 15px;
+  color: var(--light-gray);
+  text-align: center;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_amd_feature {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_amd_feature .s05_amd_feature01,
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_amd_feature .s05_amd_feature02,
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_amd_feature .s05_amd_feature03 {
+  width: 33%;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_amd_feature .s05_amd_feature01,
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_amd_feature .s05_amd_feature02 {
+  border-right: 1px solid var(--light-gray);
+}
+
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_amd_feature h4{
+  font-family: "Gotham";
+  font-size: 20px;
+  color: var(--main-red);
+}
+
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_amd_feature p{
+  font-family: "Gotham";
+  font-size: 15px;
+  color: var(--light-gray);
+  margin: 0;
+}
+
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_amd_bg {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  background: url('/innergigabyteimages/s05_amd_bg.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_amd_bg .s05_amd_chip {
+  width: 35%;
+  height: auto;
+  padding-top: 1.5rem;
+}
+
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_amd_bg .s05_amd_chip img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_connectivity_tab_area {
+  width: 50%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--white);
+  border-radius: 60px;
+  font-size: 15px;
+  font-family: "Gotham";
+  color: var(--white);
+  list-style: none;
+  position: relative;
+  margin: 0px auto 20px auto;
+  padding: 0;
+}
+
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_connectivity_tab_area .s05_connectivity_tab {
+  text-align: center;
+  flex-grow: 1;
+  height: 100%;
+  cursor: pointer;
+}
+
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_connectivity_tab_area .s05_connectivity_tab.active {
+  background-color: var(--main-red);
+  border-radius: 55px;
+  transition: background-color .5s ease-in;
+}
+
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_connectivity_feature {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  content-visibility: hidden;
+  opacity: 0;
+  transition: .5s ease-in;
+}
+
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_connectivity_feature.active {
+  content-visibility: visible;
+  opacity: 1;
+}
+
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_ddrs_feature,
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_vesa_feature {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_connectivity_feature .s05_vesa_feature_img,
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_ddrs_feature .s05_ddrs_feature_img,
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_vesa_feature .s05_vesa_feature_img {
+  max-width: 300px;
+  height: auto;
+}
+
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_connectivity_feature .s05_vesa_feature_img img,
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_ddrs_feature .s05_ddrs_feature_img img,
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_vesa_feature .s05_vesa_feature_img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* section 6 small outside powerful inside */
+.InnerGIGABYTEContent .s06 {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 2rem;
+  border-top-left-radius: 55px;
+  border-top-right-radius: 55px;
+  background-image: linear-gradient(rgba(27, 29, 33, 1), rgba(0, 0, 0, 0));
+}
+
+.InnerGIGABYTEContent .s06 .s06_tab_area {
+  width: 70%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--white);
+  border-radius: 60px;
+  font-size: 20px;
+  font-family: "Gotham";
+  color: var(--white);
+  list-style: none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.InnerGIGABYTEContent .s06 .s06_tab_area .s06_tab {
+  text-align: center;
+  flex-grow: 1;
+  height: 100%;
+  cursor: pointer;
+}
+
+.InnerGIGABYTEContent .s06 .s06_tab.active {
+  background-color: var(--main-red);
+  border-radius: 55px;
+  transition: background-color .5s ease-in;
+}
+
+.InnerGIGABYTEContent .s06 h1 {
+  font-family: "Gotham_Bold";
+  font-size: 40px;
+  padding-top: 20px;
+  margin: 0;
+}
+
+.InnerGIGABYTEContent .s06 .s06_description {
+  width: 70%;
+  font-family: "Gotham";
+  font-size: 15px;
+  color: var(--light-gray);
+  text-align: center;
+  padding: 20px 0;
+}
+
+.InnerGIGABYTEContent .s06 .s06_content_bg {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  background: url('/innergigabyteimages/s06_bg.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.InnerGIGABYTEContent .s06 .s06_content_bg .s06_content_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  max-width: 1200px;
+  top: 0;
+  right: auto;
+  bottom: 0;
+  left: auto;
+  content-visibility: hidden;;
+  opacity: 0;
+  transition: .5s ease-in;
+}
+
+.InnerGIGABYTEContent .s06 .s06_content_bg .s06_content_area.active {
+  content-visibility: visible;
+  opacity: 1;
+}
+
+.InnerGIGABYTEContent .s06 .s06_content_bg .s06_content_text {
+  width: 50%;
+  font-family: "Gotham";
+  color: var(--white);
+  padding-left: 80px;
+}
+
+.InnerGIGABYTEContent .s06 .s06_content_bg .s06_content_image {
+  width: 100%;
+  height: 100%;
+}
+
+.InnerGIGABYTEContent .s06 .s06_content_bg .s06_content_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.InnerGIGABYTEContent .s06 .s06_content_bg .s06_fade_up_list {
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+/* section 7 Product Pictures */
+.InnerGIGABYTEContent .s07 {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.InnerGIGABYTEContent .s07 h1 {
+  font-family: "Gotham_Bold";
+  font-size: 40px;
+}
+
+.InnerGIGABYTEContent .s07 .s07_title {
+  width: 260px;
+  padding-bottom: 20px;
+}
+
+.InnerGIGABYTEContent .s07 .s07_image {
+  width: 280px;
+  padding-bottom: 20px;
+}
+
+.InnerGIGABYTEContent .s07 .s07_title img,
+.InnerGIGABYTEContent .s07 .s07_image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.InnerGIGABYTEContent .s07 .s07_version {
+  width: 200px;
+  height: 40px;
+  font-family: "Gotham_Bold";
+  font-size: 20px;
+  color: var(--white);
+  border-radius: 20px;
+  background-color: var(--dark-gray);
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+}
+
+.InnerGIGABYTEContent .s07 .s07_description {
+  font-family: "Gotham_Light";
+  font-size: 10px;
+  color: var(--light-gray);
+  text-align: center;
+  padding-top: 1rem;
+}
+
+/* section 8 Windows 11 */
+.InnerGIGABYTEContent .s08 {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem 2rem 0 2rem;
+  position: relative;
+  border-top-left-radius: 55px;
+  border-top-right-radius: 55px;
+  background-image: linear-gradient(rgba(27, 29, 33, 1), rgba(0, 0, 0, 0));
+}
+
+.InnerGIGABYTEContent .s08 h1 {
+  width: 1100px;
+  font-family: "Gotham_Bold";
+  font-size: 35px;
+  color: var(--white);
+  text-align: center;
+  padding: 0 50px;
+}
+
+.InnerGIGABYTEContent .s08 .s08_subTitle {
+  width: 900px;
+  height: auto;
+  font-family: "Gotham_Bold";
+  font-size: 20px;
+  color: var(--white);
+  border-radius: 20px;
+  background-color: var(--dark-gray);
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+  margin: 1rem 0;
+}
+
+.InnerGIGABYTEContent .s08 .s08_content {
+  width: 900px;
+  font-family: "Gotham_Bold";
+  font-size: 15px;
+  color: var(--light-gray);
+  text-align: center;
+}
+
+.InnerGIGABYTEContent .s08 .s08_image {
+  width: 50vw;
+  height: auto;
+}
+
+.InnerGIGABYTEContent .s08 .s08_image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  /* object-position: 50% -20%; */
+}
+
+.InnerGIGABYTEContent #fullpage #section7 > .fp-watermark {
+  display: none;
+}
+
+.InnerGIGABYTEContent #fullpage .section > .fp-overflow {
+  overflow-y: auto;
+  padding: 0;
+}
+
+/* md */
+@media (max-width: 992px) {
+  /* s01 landing page */
+  .InnerGIGABYTEContent .s01_title {
+    width: 400px;
+  }
+
+  .InnerGIGABYTEContent .s01_subTitle {
+    width: 450px;
+  }
+
+  .InnerGIGABYTEContent .s01_product {
+    width: 250px;
+  }
+
+  .InnerGIGABYTEContent .s01_feature {
+    width: 160px;
+  }
+
+  /* s07 Product Pictures */
+  .InnerGIGABYTEContent .s07 h1 {
+    font-size: 35px;
+  }
+
+  .InnerGIGABYTEContent .s07 .s07_version {
+    width: 200px;
+  }
+
+  /* s08 Windows11 */
+  .InnerGIGABYTEContent .s08 {
+    height: auto;
+  }
+
+  .InnerGIGABYTEContent .s08 h1 {
+    width: 650px;
+    font-size: 30px;
+    padding: 0 20px;
+  }
+
+  .InnerGIGABYTEContent .s08 .s08_subTitle {
+    width: 550px;
+    line-height: 35px;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .InnerGIGABYTEContent .s08 .s08_content {
+    width: 550px;
+  }
+
+  .InnerGIGABYTEContent .s08 .s08_image {
+    width: 50vw;
+    height: auto;
+  }
+}
+
+/* sm */
+@media (max-width: 576px) {
+  /* s01 landing page */
+  .InnerGIGABYTEContent .s01_title {
+    width: 300px;
+  }
+
+  .InnerGIGABYTEContent .s01_subTitle {
+    width: 350px;
+  }
+
+  .InnerGIGABYTEContent .s01_product {
+    width: 200px;
+  }
+
+  .InnerGIGABYTEContent .s01_feature {
+    width: 150px;
+  }
+
+  /* s07 Product Pictures */
+  .InnerGIGABYTEContent .s07 h1 {
+    font-size: 35px;
+  }
+
+  .InnerGIGABYTEContent .s07 .s07_version {
+    width: 200px;
+  }
+
+  /* s08 Windows11 */
+  .InnerGIGABYTEContent .s08 {
+    height: auto;
+  }
+
+  .InnerGIGABYTEContent .s08 h1 {
+    max-width: 350px;
+    font-size: 20px;
+    padding: 0 15px;
+  }
+
+  .InnerGIGABYTEContent .s08 .s08_subTitle {
+    width: 320px;
+    line-height: 30px;
+    font-size: 15px;
+    padding: 5px;
+  }
+
+  .InnerGIGABYTEContent .s08 .s08_content {
+    width: 320px;
+  }
+
+  .InnerGIGABYTEContent .s08 .s08_image {
+    width: 100vw;
+    height: auto;
+  }
+}
