@@ -118,7 +118,7 @@ h1 {
 
 .InnerGIGABYTEContent .s03 h1 {
   font-family: "Gotham_Bold";
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .InnerGIGABYTEContent .s03 .animationImages {
@@ -231,7 +231,7 @@ h1 {
 }
 
 .InnerGIGABYTEContent .collapse-btn {
-  width: 120px;
+  width: 150px;
   border: unset;
   border-radius: 20px;
   background-color: var(--main-red);
@@ -463,7 +463,7 @@ h1 {
 }
 
 .InnerGIGABYTEContent .s06 .s06_tab_area {
-  width: 70%;
+  width: 800px;
   height: 60px;
   display: flex;
   align-items: center;
@@ -491,6 +491,18 @@ h1 {
   transition: background-color .5s ease-in;
 }
 
+.InnerGIGABYTEContent .s06 .s06_tab_area .s06_tab.s06_tab_01,
+.InnerGIGABYTEContent .s06 .s06_tab_area .s06_tab.s06_tab_04,
+.InnerGIGABYTEContent .s06 .s06_tab_area .s06_tab.s06_tab_05,
+.InnerGIGABYTEContent .s06 .s06_tab_area .s06_tab.s06_tab_06 {
+  padding-Top: 16px;
+}
+
+.InnerGIGABYTEContent .s06 .s06_tab_area .s06_tab.s06_tab_02,
+.InnerGIGABYTEContent .s06 .s06_tab_area .s06_tab.s06_tab_03 {
+  padding-top: 5px;
+}
+
 .InnerGIGABYTEContent .s06 h1 {
   font-family: "Gotham_Bold";
   font-size: 40px;
@@ -499,7 +511,7 @@ h1 {
 }
 
 .InnerGIGABYTEContent .s06 .s06_description {
-  width: 70%;
+  width: 800px;
   font-family: "Gotham";
   font-size: 15px;
   color: var(--light-gray);
@@ -547,7 +559,7 @@ h1 {
 }
 
 .InnerGIGABYTEContent .s06 .s06_content_bg .s06_content_image {
-  width: 100%;
+  width: 800px;
   height: 100%;
 }
 
@@ -576,7 +588,7 @@ h1 {
 
 .InnerGIGABYTEContent .s07 h1 {
   font-family: "Gotham_Bold";
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .InnerGIGABYTEContent .s07 .s07_title {
@@ -703,9 +715,69 @@ h1 {
     width: 160px;
   }
 
+  /* s03 New Modular Chassis */
+  .InnerGIGABYTEContent .s03 h1 {
+    font-size: 40px;
+  }
+
+  /* s06 small outside powerful inside */
+  .InnerGIGABYTEContent .s06 .s06_tab_area {
+    width: 550px;
+    height: 50px;
+    font-size: 15px;
+  }
+
+  .InnerGIGABYTEContent .s06 .s06_tab_area .s06_tab.s06_tab_01,
+  .InnerGIGABYTEContent .s06 .s06_tab_area .s06_tab.s06_tab_04,
+  .InnerGIGABYTEContent .s06 .s06_tab_area .s06_tab.s06_tab_05,
+  .InnerGIGABYTEContent .s06 .s06_tab_area .s06_tab.s06_tab_06 {
+    padding-Top: 12px;
+  }
+
+  .InnerGIGABYTEContent .s06 .s06_tab_area .s06_tab.s06_tab_02,
+  .InnerGIGABYTEContent .s06 .s06_tab_area .s06_tab.s06_tab_03 {
+    padding-top: 3px;
+  }
+
+  .InnerGIGABYTEContent .s06 h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .InnerGIGABYTEContent .s06 .s06_description {
+    width: 550px;
+    margin: 0 auto;
+  }
+
+  .InnerGIGABYTEContent .s06 .s06_content_bg {
+    height: 280px;
+  }
+
+  .InnerGIGABYTEContent .s06 .s06_content_bg .s06_content_text h2 {
+    font-size: 25px;
+  }
+
+  .InnerGIGABYTEContent .s06 .s06_content_bg .s06_content_text {
+    padding-left: 60px;
+  }
+
+  .InnerGIGABYTEContent .s06 .s06_content_bg .s06_fade_up_list {
+    padding-left: 20px;
+    font-size: 18px;
+  }
+
+  .InnerGIGABYTEContent .s06 .s06_content_bg .s06_content_image {
+    width: 500px;
+    height: 100%;
+  }
+
+  .InnerGIGABYTEContent .s06 .s06_content_bg .s06_content_image img {
+    object-fit: contain;
+  }
+
   /* s07 Product Pictures */
   .InnerGIGABYTEContent .s07 h1 {
-    font-size: 35px;
+    font-size: 40px;
   }
 
   .InnerGIGABYTEContent .s07 .s07_version {
@@ -765,13 +837,93 @@ h1 {
     width: 150px;
   }
 
+  /* s03 New Modular Chassis */
+  .InnerGIGABYTEContent .s03 h1 {
+    font-size: 25px;
+  }
+
+  /* s06 small outside powerful inside */
+  .InnerGIGABYTEContent .s06 {
+    height: 100vh;
+    display: block;
+    padding-top: 32px;
+  }
+  
+  .InnerGIGABYTEContent .s06 .s06_tab_area {
+    width: 550px;
+    height: 50px;
+    font-size: 15px;
+    margin: 0 auto;
+    /* overflow: hidden; */
+    overflow-y: scroll;
+    margin-left: 25px;
+  }
+
+  .InnerGIGABYTEContent .s06 .s06_tab_area .s06_tab.s06_tab_01,
+  .InnerGIGABYTEContent .s06 .s06_tab_area .s06_tab.s06_tab_04,
+  .InnerGIGABYTEContent .s06 .s06_tab_area .s06_tab.s06_tab_05,
+  .InnerGIGABYTEContent .s06 .s06_tab_area .s06_tab.s06_tab_06 {
+    padding-Top: 13px;
+  }
+
+  .InnerGIGABYTEContent .s06 .s06_tab_area .s06_tab.s06_tab_02,
+  .InnerGIGABYTEContent .s06 .s06_tab_area .s06_tab.s06_tab_03 {
+    padding-top: 5px;
+  }
+
+  .InnerGIGABYTEContent .s06 h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .InnerGIGABYTEContent .s06 .s06_description {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .InnerGIGABYTEContent .s06 .s06_content_bg {
+    height: 220px;
+  }
+
+  .InnerGIGABYTEContent .s06 .s06_content_bg .s06_content_text h2 {
+    font-size: 16px;
+  }
+
+  .InnerGIGABYTEContent .s06 .s06_content_bg .s06_content_text {
+    padding-left: 20px;
+  }
+
+  .InnerGIGABYTEContent .s06 .s06_content_bg .s06_fade_up_list {
+    padding-left: 20px;
+    font-size: 12px;
+  }
+
+  .InnerGIGABYTEContent .s06 .s06_content_bg .s06_content_image {
+    width: 220px;
+    height: 100%;
+  }
+
+  .InnerGIGABYTEContent .s06 .s06_content_bg .s06_content_image img {
+    object-fit: contain;
+  }
+
   /* s07 Product Pictures */
   .InnerGIGABYTEContent .s07 h1 {
-    font-size: 35px;
+    font-size: 25px;
   }
 
   .InnerGIGABYTEContent .s07 .s07_version {
     width: 200px;
+  }
+
+  .InnerGIGABYTEContent .s07 .s07_title {
+    width: 220px;
+    /* padding-bottom: 20px; */
+  }
+  
+  .InnerGIGABYTEContent .s07 .s07_image {
+    width: 230px;
+    /* padding-bottom: 20px; */
   }
 
   /* s08 Windows11 */

@@ -91,7 +91,7 @@ $('.collapse-btn').click(e => {
 
     $('.box-01').animate({
       opacity: 0,
-      top: "+=275"
+      top: "+=280"
     }, 1500)
     $('.box-02').animate({
       opacity: 0,
