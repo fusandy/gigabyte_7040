@@ -1,11 +1,11 @@
 h1 {
   color: var(--white);
 }
+
 :root {
   --main-red: #ED1C24;
-  --shadow-red: #ED1C24;
   --dark-gray: #666666;
-  --light-gray: #8B8B8B;;
+  --light-gray: #8B8B8B;
   --black: #000000;
   --white: #ffffff;
 }
@@ -14,10 +14,12 @@ h1 {
   font-family: "Gotham";
   src: url(../font/Gotham-Medium.otf);
 }
+
 @font-face {
   font-family: "Gotham_Bold";
   src: url(../font/Gotham-Bold.otf);
 }
+
 @font-face {
   font-family: "Gotham_Light";
   src: url(../font/Gotham-Light.otf);
@@ -29,8 +31,15 @@ h1 {
   font-size: 10px;
 }
 
+/* section common style */
 .InnerGIGABYTEContent {
   background-color: var(--black);
+}
+
+/* modal style */
+.InnerGIGABYTEContent .modal .modal-header {
+  font-family: "Gotham_Bold";
+  font-size: 18px;
 }
 
 /* s01 landing page */
@@ -118,7 +127,7 @@ h1 {
 
 .InnerGIGABYTEContent .s03 h1 {
   font-family: "Gotham_Bold";
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .InnerGIGABYTEContent .s03 .animationImages {
@@ -127,6 +136,18 @@ h1 {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+}
+
+.InnerGIGABYTEContent .s03 .animationImages .image-box .btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  font-family: "Gotham";
+  font-weight: bold;
+  position: absolute;
+  top: 15px;
+  left: -25px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
 .InnerGIGABYTEContent .s03 .animationImages .image-box.box-01 {
@@ -235,7 +256,7 @@ h1 {
   border: unset;
   border-radius: 20px;
   background-color: var(--main-red);
-  box-shadow: 1px 1px 2px 1px var(--shadow-red);
+  box-shadow: 1px 1px 2px 1px var(--main-red);
   font-family: "Gotham_Bold";
   font-size: 25px;
   color: var(--white);
@@ -248,6 +269,51 @@ h1 {
 
 .InnerGIGABYTEContent .collapse-btn:focus {
   outline: none !important;
+}
+
+/* s04 Performanvce Low Noise Upgrade Kit */
+.InnerGIGABYTEContent .s04 {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 2rem;
+  /* border-top-left-radius: 55px;
+  border-top-right-radius: 55px; */
+  /* background-image: linear-gradient(rgba(27, 29, 33, 1), rgba(0, 0, 0, 0)); */
+}
+
+.InnerGIGABYTEContent .s04 .s04_tab_area {
+  width: 800px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--white);
+  border-radius: 60px;
+  font-size: 20px;
+  font-family: "Gotham";
+  color: var(--white);
+  list-style: none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.InnerGIGABYTEContent .s04 .s04_tab_area .s04_tab {
+  text-align: center;
+  flex-grow: 1;
+  height: 100%;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.InnerGIGABYTEContent .s04 .s04_tab.active {
+  background-color: var(--main-red);
+  border-radius: 55px;
+  transition: background-color .5s ease-in;
 }
 
 /* s05 AMD Connectivity OutPut DDRS VESA */
@@ -296,7 +362,8 @@ h1 {
 }
 
 .InnerGIGABYTEContent .s05 .s05_content_area {
-  content-visibility: hidden;;
+  content-visibility: hidden;
+  ;
   opacity: 0;
   transition: .5s ease-in;
 }
@@ -344,13 +411,13 @@ h1 {
   border-right: 1px solid var(--light-gray);
 }
 
-.InnerGIGABYTEContent .s05 .s05_content_area .s05_amd_feature h4{
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_amd_feature h4 {
   font-family: "Gotham";
   font-size: 20px;
   color: var(--main-red);
 }
 
-.InnerGIGABYTEContent .s05 .s05_content_area .s05_amd_feature p{
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_amd_feature p {
   font-family: "Gotham";
   font-size: 15px;
   color: var(--light-gray);
@@ -541,7 +608,8 @@ h1 {
   right: auto;
   bottom: 0;
   left: auto;
-  content-visibility: hidden;;
+  content-visibility: hidden;
+  ;
   opacity: 0;
   transition: .5s ease-in;
 }
@@ -684,20 +752,21 @@ h1 {
 .InnerGIGABYTEContent .s08 .s08_image img {
   width: 100%;
   height: auto;
-  object-fit: contain;  
+  object-fit: contain;
 }
 
-.InnerGIGABYTEContent #fullpage #section7 > .fp-watermark {
+.InnerGIGABYTEContent #fullpage #section7>.fp-watermark {
   display: none;
 }
 
-.InnerGIGABYTEContent #fullpage .section > .fp-overflow {
+.InnerGIGABYTEContent #fullpage .section>.fp-overflow {
   overflow-y: auto;
   padding: 0;
 }
 
 /* md */
 @media (max-width: 992px) {
+
   /* s01 landing page */
   .InnerGIGABYTEContent .s01_title {
     width: 400px;
@@ -718,6 +787,13 @@ h1 {
   /* s03 New Modular Chassis */
   .InnerGIGABYTEContent .s03 h1 {
     font-size: 40px;
+  }
+
+  /* s04 Performanvce Low Noise Upgrade Kit */
+  .InnerGIGABYTEContent .s04 .s04_tab_area {
+    width: 600px;
+    height: 50px;
+    font-size: 15px;
   }
 
   /* s05 AMD Connectivity OutPut DDRS VESA */
@@ -741,7 +817,7 @@ h1 {
     width: 700px;
   }
 
-  .InnerGIGABYTEContent .s05 .s05_content_area .s05_amd_feature h4{
+  .InnerGIGABYTEContent .s05 .s05_content_area .s05_amd_feature h4 {
     font-size: 18px;
   }
 
@@ -885,6 +961,41 @@ h1 {
     font-size: 25px;
   }
 
+  /* s04 Performanvce Low Noise Upgrade Kit */
+  .InnerGIGABYTEContent .s04 .s04_tab_area {
+    max-width: 100%;
+    height: 50px;
+    display: inline-block;
+    overflow: auto;
+    overflow-x: scroll;
+    font-size: 13px;
+    white-space: nowrap;
+    scrollbar-color: transparent transparent;
+  }
+
+  .InnerGIGABYTEContent .s04 .s04_tab_area::-webkit-scrollbar {
+    height: 0px;
+  }
+
+  .InnerGIGABYTEContent .s04 .s04_tab_area::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+  }
+
+  .InnerGIGABYTEContent .s04 .s04_tab_area::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0);
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+  }
+
+  .InnerGIGABYTEContent .s04 .s04_tab_area::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .InnerGIGABYTEContent .s04 .s04_tab_area .s04_tab {
+    padding: 15px 10px;
+    display: inline-block;
+    width: 140px;
+  }
+
   /* s05 AMD Connectivity OutPut DDRS VESA */
   .InnerGIGABYTEContent .s05 {
     height: auto;
@@ -917,7 +1028,7 @@ h1 {
     background: rgba(0, 0, 0, 0);
     -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
   }
-  
+
   .InnerGIGABYTEContent .s05 .s05_tab_area::-webkit-scrollbar-thumb:window-inactive {
     background: rgba(0, 0, 0, 0);
   }
@@ -981,7 +1092,7 @@ h1 {
     display: block;
     padding-top: 32px;
   }
-  
+
   .InnerGIGABYTEContent .s06 .s06_tab_area {
     max-width: 100%;
     height: 50px;
@@ -1005,7 +1116,7 @@ h1 {
     background: rgba(0, 0, 0, 0);
     -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
   }
-  
+
   .InnerGIGABYTEContent .s06 .s06_tab_area::-webkit-scrollbar-thumb:window-inactive {
     background: rgba(0, 0, 0, 0);
   }
@@ -1074,7 +1185,7 @@ h1 {
   .InnerGIGABYTEContent .s07 .s07_title {
     width: 220px;
   }
-  
+
   .InnerGIGABYTEContent .s07 .s07_image {
     width: 230px;
   }

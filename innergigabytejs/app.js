@@ -13,22 +13,19 @@ new fullpage('#fullpage', {
     'Windows 11'
   ],
   scrollOverflow: true,
-  onLeave: (e) => {
-    // console.log('onLeave e:', e)
+  normalScrollElements: '.modal',
+  onLeave: () => {
     $('.section [data-aos]').removeClass("aos-animate");
-    // $('.section.active .s06 li [data-aos]').removeClass("aos-animate");
   },
   onSlideLeave: () => {
-    // $('.slide [data-aos]').removeClass("aos-animate");
+    $('.slide [data-aos]').removeClass("aos-animate");
   },
   afterSlideLoad: () => {
-    // $('.slide.active [data-aos]').addClass("aos-animate");
+    $('.slide.active [data-aos]').addClass("aos-animate");
   },
-  afterLoad: (e) => {
-    // console.log('afterLoad e:', e)
+  afterLoad: () => {
     $('.section.active [data-aos]').addClass("aos-animate");
     $('.fp-table.active .aos-init').addClass('aos-animate');
-    // $('.section.active .s06 li [data-aos]').addClass("aos-animate");
   }
 })
 
@@ -135,9 +132,27 @@ $('.collapse-btn').click(e => {
   }
 })
 
+// s04 tab actions
+let s04TabId = 's04_tab_01'
+$('.s04_tab').click(function () {
+  const tabId = $(this).data('tab')
+
+  if (s04TabId === tabId) return
+
+  $('.s04_tab').removeClass('active')
+  $(this).addClass('active')
+
+  const removeTabContent = `#${s04TabId}_content`
+  const activeTabContent = `#${tabId}_content`
+
+  $(removeTabContent).removeClass('active')
+  $(activeTabContent).addClass('active')
+
+  s04TabId = tabId
+})
+
 // s05 tab actions
 let s05TabId = 's05_tab_01'
-console.log('s05TabId:', s05TabId)
 $('.s05_tab').click(function () {
   const tabId = $(this).data('tab')
 
@@ -153,12 +168,10 @@ $('.s05_tab').click(function () {
   $(activeTabContent).addClass('active')
 
   s05TabId = tabId
-  console.log('s05TabId:', s05TabId)
 })
 
 // s05 connectivity tab actions
 let s05ConnectivityTabId = 's05_connectivity_tab_01'
-console.log('s05ConnectivityTabId:', s05ConnectivityTabId)
 $('.s05_connectivity_tab').click(function () {
   const tabId = $(this).data('tab')
 
@@ -174,7 +187,6 @@ $('.s05_connectivity_tab').click(function () {
   $(activeTabContent).addClass('active')
 
   s05ConnectivityTabId = tabId
-  console.log('s05ConnectivityTabId:', s05TabId)
 })
 
 // s06 tab actions
@@ -194,11 +206,6 @@ $('.s06_tab').click(function () {
 
   $(removeTabContent).removeClass('active')
   $(activeTabContent).addClass('active')
-  // $('.section.active [data-aos]').addClass("aos-animate");
 
   s06TabId = tabId
-  // console.log('s06TabId:', s06TabId)
-
-  // todo aos-animate 切換的時候再加上去
-  // 取得該tab底下的li數量 forEach 加上 data-set 
 })
