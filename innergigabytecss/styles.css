@@ -5,7 +5,7 @@ h1 {
 :root {
   --main-red: #ED1C24;
   --dark-gray: #666666;
-  --light-gray: #8B8B8B;
+  --light-gray: #B9B9B9;
   --black: #000000;
   --white: #ffffff;
 }
@@ -316,6 +316,172 @@ h1 {
   transition: background-color .5s ease-in;
 }
 
+.InnerGIGABYTEContent .s04 .s04_content_area {
+  content-visibility: hidden;
+  opacity: 0;
+  transition: .5s ease-in;
+}
+
+.InnerGIGABYTEContent .s04 .s04_content_area.active {
+  content-visibility: visible;
+  opacity: 1;
+}
+
+.InnerGIGABYTEContent .s04 .s04_content_area h1 {
+  font-family: "Gotham_Bold";
+  font-size: 40px;
+  padding-top: 20px;
+  margin: 0;
+  text-align: center;
+}
+
+.InnerGIGABYTEContent .s04 .s04_content_area .mySwiper_wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.InnerGIGABYTEContent .s04 .s04_content_area .swiper {
+  width: 100%;
+  height: auto;
+}
+
+.InnerGIGABYTEContent .s04 .s04_content_area .swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.InnerGIGABYTEContent .s04 .s04_content_area .swiper-slide {
+  width: 100%;
+  height: 400px;
+  /* text-align: center; */
+  /* background: #fff; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px !important;
+}
+
+
+.InnerGIGABYTEContent .s04 .slide_content {
+  width: 700px;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 30px 50px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.InnerGIGABYTEContent .s04 .s04_content_area .slide_title {
+  color: var(--dark-gray);
+  font-size: 30px;
+  font-family: "Gotham_Bold";
+  text-align: center;
+}
+
+.InnerGIGABYTEContent .s04 .s04_content_area .slide_subTitle {
+  color: var(--white);
+  font-size: 20px;
+  font-family: "Gotham";
+  text-align: center;
+}
+
+.InnerGIGABYTEContent .s04 .main-color {
+  background: var(--main-red);
+}
+
+.InnerGIGABYTEContent .s04 .second-color {
+  background: var(--dark-gray);
+}
+
+.InnerGIGABYTEContent .s04 .third-color {
+  background: var(--light-gray);
+}
+
+.InnerGIGABYTEContent .s04 .progressbar_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.InnerGIGABYTEContent .s04 .progressbar {
+  width: 0;
+  height: 40px;
+  transition: width 0.8s ease-in-out;
+  border-radius: 10px;
+}
+
+.InnerGIGABYTEContent .s04 .progressbar_text {
+  font-family: "Gotham";
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.InnerGIGABYTEContent .s04 .bar_mark_container,
+.InnerGIGABYTEContent .s04 .mark_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.InnerGIGABYTEContent .s04 .mark_dot {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.InnerGIGABYTEContent .s04 .mark_text {
+  font-family: "Gotham";
+  font-size: 20px;
+  color: var(--white);
+}
+
+.InnerGIGABYTEContent .s04 .s04_content_area .swiper-button-next {
+  z-index: 100;
+  transform: translateX(-50px);
+}
+
+.InnerGIGABYTEContent .s04 .s04_content_area .swiper-button-prev {
+  transform: translateX(50px);
+}
+
+.InnerGIGABYTEContent .s04 .s04_content_area .swiper-button-next,
+.InnerGIGABYTEContent .s04 .s04_content_area .swiper-button-prev {
+  background: var(--light-gray);
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50%;
+}
+
+.InnerGIGABYTEContent .s04 .s04_content_area .swiper-button-next::after,
+.InnerGIGABYTEContent .s04 .s04_content_area .swiper-button-prev::after {
+  font-size: 1rem !important;
+  color: var(--white);
+}
+
+.InnerGIGABYTEContent .s04 .s04_content_area .s04_description {
+  width: 800px;
+  font-family: "Gotham";
+  font-size: 15px;
+  color: var(--light-gray);
+  text-align: center;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+.InnerGIGABYTEContent .s04 .s04_content_area .s04_upgradekit_image {
+  width: 800px;
+}
+
+.InnerGIGABYTEContent .s04 .s04_content_area .s04_upgradekit_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 /* s05 AMD Connectivity OutPut DDRS VESA */
 .InnerGIGABYTEContent .s05 {
   width: 100%;
@@ -363,7 +529,6 @@ h1 {
 
 .InnerGIGABYTEContent .s05 .s05_content_area {
   content-visibility: hidden;
-  ;
   opacity: 0;
   transition: .5s ease-in;
 }

@@ -15,17 +15,17 @@ new fullpage('#fullpage', {
   scrollOverflow: true,
   normalScrollElements: '.modal',
   onLeave: () => {
-    $('.section [data-aos]').removeClass("aos-animate");
+    $('.section [data-aos]').removeClass("aos-animate")
   },
   onSlideLeave: () => {
-    $('.slide [data-aos]').removeClass("aos-animate");
+    $('.slide [data-aos]').removeClass("aos-animate")
   },
   afterSlideLoad: () => {
-    $('.slide.active [data-aos]').addClass("aos-animate");
+    $('.slide.active [data-aos]').addClass("aos-animate")
   },
   afterLoad: () => {
-    $('.section.active [data-aos]').addClass("aos-animate");
-    $('.fp-table.active .aos-init').addClass('aos-animate');
+    $('.section.active [data-aos]').addClass("aos-animate")
+    $('.fp-table.active .aos-init').addClass('aos-animate')
   }
 })
 
@@ -150,6 +150,63 @@ $('.s04_tab').click(function () {
 
   s04TabId = tabId
 })
+
+// s04 progress bar animation
+const progressBars = document.querySelectorAll(".progressbar")
+
+// Set up an Intersection Observer to trigger the progress bar animation
+const options = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.5,
+}
+
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    // console.log(entry.isIntersecting)
+    if (entry.isIntersecting) {
+      // Start the animation when the element is in the viewport
+      const percentage = parseInt(entry.target.getAttribute("data-percentage"))
+      entry.target.style.width = percentage + "%"
+      // Stop observing the element once the animation has started
+      // observer.unobserve(entry.target)
+    } else {
+      // Reset the width to 0 when the element is not in the viewport
+      entry.target.style.width = 0 + "%"
+    }
+  })
+}, options)
+
+// Observe all the progress bar elements
+progressBars.forEach(progressBar => {
+  observer.observe(progressBar)
+})
+
+// Todo: Swiper initialize failed cause swiper-button disabled
+
+// const swiper = new Swiper(".swiper.mySwiper", {
+//   allowTouchMove: false,
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   }
+// })
+
+// const swiperWrapper = document.querySelector(".swiper-wrapper");
+
+// swiper.on("slideChange", function () {
+//   // Get the current slide index
+//   const currentSlideIndex = swiper.activeIndex;
+//   if (currentSlideIndex === 1 || currentSlideIndex === 2) {
+//     if (window.innerWidth < 576) {
+//       swiperWrapper.style.height = "100vw";
+//     } else {
+//       swiperWrapper.style.height = "500px";
+//     }
+//   } else {
+//     swiperWrapper.style.height = "auto";
+//   }
+// })
 
 // s05 tab actions
 let s05TabId = 's05_tab_01'
