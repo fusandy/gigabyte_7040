@@ -335,13 +335,14 @@ h1 {
   text-align: center;
 }
 
-.InnerGIGABYTEContent .s04 .s04_content_area .mySwiper_wrapper {
+/* .InnerGIGABYTEContent .s04 .s04_content_area .mySwiper_wrapper {
   position: relative;
   width: 100%;
   height: auto;
-}
+} */
 
 .InnerGIGABYTEContent .s04 .s04_content_area .swiper {
+  position: relative;
   width: 100%;
   height: auto;
 }
@@ -367,9 +368,7 @@ h1 {
 .InnerGIGABYTEContent .s04 .slide_content {
   width: 700px;
   margin: 0 auto;
-  border-radius: 20px;
   padding: 30px 50px;
-  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -418,6 +417,10 @@ h1 {
   font-family: "Gotham";
   font-size: 20px;
   margin-left: 20px;
+}
+
+.InnerGIGABYTEContent .s04 .progressbar_text.low_noise {
+  width: 220px;
 }
 
 .InnerGIGABYTEContent .s04 .bar_mark_container,
@@ -961,6 +964,32 @@ h1 {
     font-size: 15px;
   }
 
+  .InnerGIGABYTEContent .s04 .s04_content_area h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .InnerGIGABYTEContent .s04 .s04_content_area .s04_description {
+    width: 550px;
+    margin: 0 auto;
+  }
+
+  .InnerGIGABYTEContent .s04 .s04_content_area .slide_title {
+    font-size: 20px;
+  }
+
+  .InnerGIGABYTEContent .s04 .progressbar_text {
+    font-size: 15px;
+  }
+
+  .InnerGIGABYTEContent .s04 .progressbar_text.low_noise {
+    width: 170px;
+  }
+
+  .InnerGIGABYTEContent .s04 .s04_content_area .s04_upgradekit_image {
+    width: 600px;
+  }
+  
   /* s05 AMD Connectivity OutPut DDRS VESA */
   .InnerGIGABYTEContent .s05 .s05_tab_area {
     width: 600px;
@@ -1161,6 +1190,50 @@ h1 {
     width: 140px;
   }
 
+  .InnerGIGABYTEContent .s04 .s04_content_area h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .InnerGIGABYTEContent .s04 .s04_content_area .s04_description {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .InnerGIGABYTEContent .s04 #s04_tab_02_content .slide_content {
+    width: 100%;
+  }
+
+  .InnerGIGABYTEContent .s04 #s04_tab_02_content .slide_content .progressbar {
+    width: 0;
+    height: 20px;
+    transition: width 0.8s ease-in-out;
+    border-radius: 5px;
+  }
+
+  .InnerGIGABYTEContent .s04 #s04_tab_02_content .slide_content .progressbar_text {
+    font-family: "Gotham";
+    font-size: 14px;
+    margin-left: 15px;
+    word-wrap: break-word;
+  }
+
+  .InnerGIGABYTEContent .s04 .progressbar_text.low_noise {
+    width: 29%;
+  }
+
+  .InnerGIGABYTEContent .s04 .progressbar_text.memo {
+    width: 25%;
+    word-wrap: break-word;
+  }
+
+  .InnerGIGABYTEContent .s04 .s04_content_area .s04_upgradekit_image {
+    width: 100%;
+  }
+
+.InnerGIGABYTEContent .s04 .s04_content_area .s04_upgradekit_image img{
+    width: 100%;
+  }
   /* s05 AMD Connectivity OutPut DDRS VESA */
   .InnerGIGABYTEContent .s05 {
     height: auto;

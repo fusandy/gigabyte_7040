@@ -183,30 +183,31 @@ progressBars.forEach(progressBar => {
 })
 
 // Todo: Swiper initialize failed cause swiper-button disabled
+const swiper = new Swiper(".mySwiper", {
+  allowTouchMove: false,
+  
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+})
 
-// const swiper = new Swiper(".swiper.mySwiper", {
-//   allowTouchMove: false,
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   }
-// })
+console.log('swiper:', swiper)
+const swiperWrapper = document.querySelector(".swiper-wrapper");
 
-// const swiperWrapper = document.querySelector(".swiper-wrapper");
-
-// swiper.on("slideChange", function () {
-//   // Get the current slide index
-//   const currentSlideIndex = swiper.activeIndex;
-//   if (currentSlideIndex === 1 || currentSlideIndex === 2) {
-//     if (window.innerWidth < 576) {
-//       swiperWrapper.style.height = "100vw";
-//     } else {
-//       swiperWrapper.style.height = "500px";
-//     }
-//   } else {
-//     swiperWrapper.style.height = "auto";
-//   }
-// })
+swiper.on("slideChange", function () {
+  // Get the current slide index
+  const currentSlideIndex = swiper.activeIndex;
+  if (currentSlideIndex === 1 || currentSlideIndex === 2) {
+    if (window.innerWidth < 576) {
+      swiperWrapper.style.height = "100vw";
+    } else {
+      swiperWrapper.style.height = "500px";
+    }
+  } else {
+    swiperWrapper.style.height = "auto";
+  }
+})
 
 // s05 tab actions
 let s05TabId = 's05_tab_01'
@@ -248,8 +249,6 @@ $('.s05_connectivity_tab').click(function () {
 
 // s06 tab actions
 let s06TabId = 's06_tab_01'
-console.log('s06TabId:', s06TabId)
-
 $('.s06_tab').click(function () {
   const tabId = $(this).data('tab')
 
