@@ -247,6 +247,28 @@ $('.s05_connectivity_tab').click(function () {
   s05ConnectivityTabId = tabId
 })
 
+// s05 output tab actions
+let s05OutputTabId = 's05_output_tab_01'
+$('.s05_output_tab').click(function () {
+  const tabId = $(this).data('tab')
+  const redDotElement = $(this).find('.red_dot')
+
+  if (s05OutputTabId === tabId) return
+
+  $('.s05_output_tab').removeClass('active')
+  $('.red_dot').removeClass('active')
+  $(this).addClass('active')
+  $(redDotElement).addClass('active')
+
+  const removeTabContent = `#${s05OutputTabId}_content`
+  const activeTabContent = `#${tabId}_content`
+
+  $(removeTabContent).removeClass('active')
+  $(activeTabContent).addClass('active')
+
+  s05OutputTabId = tabId
+})
+
 // s06 tab actions
 let s06TabId = 's06_tab_01'
 $('.s06_tab').click(function () {

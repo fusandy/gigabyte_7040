@@ -644,17 +644,18 @@ h1 {
   transition: background-color .5s ease-in;
 }
 
-.InnerGIGABYTEContent .s05 .s05_content_area .s05_connectivity_feature {
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_connectivity_feature,
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_output_feature {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
   content-visibility: hidden;
   opacity: 0;
   transition: .5s ease-in;
 }
 
-.InnerGIGABYTEContent .s05 .s05_content_area .s05_connectivity_feature.active {
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_connectivity_feature.active,
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_output_feature.active {
   content-visibility: visible;
   opacity: 1;
 }
@@ -680,6 +681,75 @@ h1 {
   width: 100%;
   height: auto;
   object-fit: contain;
+}
+
+
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_output_tab_area {
+  width: 700px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--white);
+  border-radius: 60px;
+  font-size: 15px;
+  font-family: "Gotham";
+  color: var(--white);
+  list-style: none;
+  position: relative;
+  margin: 0px auto 20px auto;
+  padding: 0;
+}
+
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_output_tab_area .s05_output_tab {
+  text-align: center;
+  flex-grow: 1;
+  height: 100%;
+  cursor: pointer;
+  padding-top: 12px;
+}
+
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_output_tab_area .s05_output_tab.active {
+  background-image: linear-gradient(rgb(58, 61, 66), rgba(0, 0, 0, 0));
+  border-radius: 55px;
+  transition: background-color .5s ease-in;
+}
+
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_output_tab_area .red_dot {
+  display: none;
+}
+
+.InnerGIGABYTEContent .s05 .s05_content_area .red_dot.active {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--main-red);
+  margin-right: 5px;
+}
+
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_output_image {
+  width: 750px;
+  padding: 20px 0;
+}
+
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_output_image img,
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_output_ratio img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_output_ratio {
+  width: 600px;  
+  padding: 50px 0;
+}
+
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_output_text {
+  font-family: "Gotham";
+  font-size: 18px;
+  color: var(--white);
+  display: inline-block;
+  width: 40%;
 }
 
 /* s06 small outside powerful inside */
@@ -1033,6 +1103,10 @@ h1 {
     height: auto;
   }
 
+  .InnerGIGABYTEContent .s05 .s05_content_area .s05_output_ratio {
+    width: 400px;
+  }
+
   /* s06 small outside powerful inside */
   .InnerGIGABYTEContent .s06 .s06_tab_area {
     width: 600px;
@@ -1323,6 +1397,63 @@ h1 {
     max-width: 140px;
     height: auto;
   }
+
+  .InnerGIGABYTEContent .s05 .s05_content_area .s05_output_tab_area {
+    max-width: 300px;
+    height: 40px;
+    /* display: inline-block; */
+    overflow: auto;
+    overflow-x: scroll;
+    font-size: 12px;
+    white-space: nowrap;
+    scrollbar-color: transparent transparent;
+  }
+
+  .InnerGIGABYTEContent .s05 .s05_content_area .s05_output_tab_area::-webkit-scrollbar {
+    height: 0px;
+  }
+
+  .InnerGIGABYTEContent .s05 .s05_content_area .s05_output_tab_area::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+  }
+
+  .InnerGIGABYTEContent .s05 .s05_content_area .s05_output_tab_area::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0);
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+  }
+
+  .InnerGIGABYTEContent .s05 .s05_content_area .s05_output_tab_area::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .InnerGIGABYTEContent .s05 .s05_content_area .s05_output_tab_area .s05_output_tab {
+    padding: 10px;
+    display: inline-block;
+  }
+
+  .InnerGIGABYTEContent .s05 .s05_content_area .s05_output_image,
+  .InnerGIGABYTEContent .s05 .s05_content_area .s05_output_ratio {
+    width: 100%;
+    padding: 20px 10px;
+  }
+  
+  .InnerGIGABYTEContent .s05 .s05_content_area .s05_output_image img,
+  .InnerGIGABYTEContent .s05 .s05_content_area .s05_output_ratio img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .InnerGIGABYTEContent .s05 .s05_content_area .s05_output_feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .InnerGIGABYTEContent .s05 .s05_content_area .s05_output_text {
+    width: 80%;
+    font-size: 14px;
+  }    
 
   /* s06 small outside powerful inside */
   .InnerGIGABYTEContent .s06 {
