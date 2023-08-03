@@ -320,7 +320,7 @@ h1 {
   color: var(--white);
   list-style: none;
   position: relative;
-  margin: 0;
+  margin: 0 0 20px 0;
   padding: 0;
 }
 
@@ -339,10 +339,25 @@ h1 {
   transition: .5s ease-in;
 }
 
-.InnerGIGABYTEContent .s04 .s04_content_area.active {
+.InnerGIGABYTEContent .s04 #s04_tab_01_content.s04_content_area.active {
   content-visibility: visible;
   opacity: 1;
   position: relative;
+}
+
+.InnerGIGABYTEContent .s04 #s04_tab_02_content.s04_content_area.active,
+.InnerGIGABYTEContent .s04 #s04_tab_03_content.s04_content_area.active {
+  content-visibility: visible;
+  opacity: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.InnerGIGABYTEContent .carousel {
+  margin-top: 15px;
 }
 
 .InnerGIGABYTEContent .s04 .s04_content_area h1 {
@@ -456,29 +471,6 @@ h1 {
   color: var(--white);
 }
 
-/* .InnerGIGABYTEContent .s04 .s04_content_area .swiper-button-next {
-  z-index: 100;
-  transform: translateX(-50px);
-}
-
-.InnerGIGABYTEContent .s04 .s04_content_area .swiper-button-prev {
-  transform: translateX(50px);
-}
-
-.InnerGIGABYTEContent .s04 .s04_content_area .swiper-button-next,
-.InnerGIGABYTEContent .s04 .s04_content_area .swiper-button-prev {
-  background: var(--light-gray);
-  width: 40px !important;
-  height: 40px !important;
-  border-radius: 50%;
-}
-
-.InnerGIGABYTEContent .s04 .s04_content_area .swiper-button-next::after,
-.InnerGIGABYTEContent .s04 .s04_content_area .swiper-button-prev::after {
-  font-size: 1rem !important;
-  color: var(--white);
-} */
-
 .InnerGIGABYTEContent .s04 .s04_content_area .s04_description {
   width: 800px;
   font-family: "Gotham";
@@ -555,7 +547,8 @@ h1 {
   opacity: 1;
   display: flex;
   flex-direction: column;
-  gap: 15px
+  align-items: center;
+  gap: 20px;
 }
 
 .InnerGIGABYTEContent .s05 .s05_content_area h1 {
@@ -572,7 +565,7 @@ h1 {
   font-size: 15px;
   color: var(--light-gray);
   text-align: center;
-  padding: 30px 0;
+  padding: 20px 0;
   margin: 0 auto;
 }
 
@@ -675,6 +668,7 @@ h1 {
 
 .InnerGIGABYTEContent .s05 .s05_content_area .s05_connectivity_feature,
 .InnerGIGABYTEContent .s05 .s05_content_area .s05_output_feature {
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -701,6 +695,13 @@ h1 {
   align-items: center;
   max-height: 45vh;
   gap: 30px;
+}
+
+.InnerGIGABYTEContent .s05 .s05_content_area .s05_vesa_feature {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
 }
 
 .InnerGIGABYTEContent .s05 .s05_content_area .s05_ddrs_feature .s05_ddrs_feature_img.score {
@@ -779,8 +780,7 @@ h1 {
 }
 
 .InnerGIGABYTEContent .s05 .s05_content_area .s05_output_ratio {
-  width: 35%;  
-  /* padding: 50px 0; */
+  width: 35%;
 }
 
 .InnerGIGABYTEContent .s05 .s05_content_area .s05_output_text {
@@ -798,8 +798,8 @@ h1 {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
+  gap: 30px;
   padding-top: 2rem;
   border-top-left-radius: 55px;
   border-top-right-radius: 55px;
@@ -913,12 +913,23 @@ h1 {
 .InnerGIGABYTEContent .s06 .s06_content_bg .s06_content_image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .InnerGIGABYTEContent .s06 .s06_content_bg .s06_fade_up_list {
   padding-left: 20px;
   font-size: 20px;
+}
+
+.InnerGIGABYTEContent .s06 .s06_fade_up_list li {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease-in-out, transform 1s ease-in-out;
+}
+
+.InnerGIGABYTEContent .s06 .s06_fade_up_list li.fade-up-enter {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* s07 Product Pictures */
@@ -1430,6 +1441,10 @@ h1 {
     position: relative;
   }
 
+  .InnerGIGABYTEContent .s05 .s05_content_area.active {
+    gap: 30px;
+  }
+
   .InnerGIGABYTEContent .s05 .s05_content_area h1 {
     font-size: 22px;
     text-align: center;
@@ -1512,10 +1527,6 @@ h1 {
     display: inline-block;
   }
 
-  /* .InnerGIGABYTEContent .s05 .s05_content_area .s05_output_feature.active {
-    margin: 10% auto;
-  } */
-
   .InnerGIGABYTEContent .s05 .s05_content_area .s05_output_image{
     width: 100%;
     padding: 20px 10px;
@@ -1550,7 +1561,6 @@ h1 {
   /* s06 small outside powerful inside */
   .InnerGIGABYTEContent .s06 {
     height: 100vh;
-    display: block;
     padding-top: 32px;
   }
 
